@@ -1,19 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="daycare:war" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="70c42807-b350-416d-8a34-d484e55c3eab" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/daycare/persistence/SessionFactoryProvider.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/daycare/persistence/Database.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/daycare/persistence/TestUserGenerator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/daycare/persistence/UserDaoTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/resources/database.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/resources/hibernate.cfg.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/daycare/persistence/placeholder.java" afterPath="$PROJECT_DIR$/src/main/java/com/daycare/persistence/GenericDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/daycare/controller/ResultsServlet.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/daycare/utility/PropertiesLoader.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/META-INF/context.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/css/styles.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/footer.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/head-tag.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/js/getRevisedDate.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/login-error.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/role1/home.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/role1/manage-users.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/role1/results.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/daycare/persistence/RoleDaoTest.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/daycare/placeholder.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/com/daycare/placeholder.java" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/daycare/controller/placeholder.java" afterPath="$PROJECT_DIR$/src/main/java/com/daycare/controller/HomeServlet.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/daycare/entity/Role.java" afterPath="$PROJECT_DIR$/src/main/java/com/daycare/entity/Role.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/daycare/entity/User.java" afterPath="$PROJECT_DIR$/src/main/java/com/daycare/entity/User.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/daycare/persistence/TestUserGenerator.java" afterPath="$PROJECT_DIR$/src/test/java/com/daycare/persistence/TestUserGenerator.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/daycare/persistence/UserDaoTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/daycare/persistence/UserDaoTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -53,92 +66,107 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/daycare/entity/User.java">
+      <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#652#653#0" expanded="true" />
-                <element signature="e#683#684#0" expanded="true" />
-                <element signature="e#731#732#0" expanded="true" />
-                <element signature="e#771#772#0" expanded="true" />
-                <element signature="e#806#807#0" expanded="true" />
-                <element signature="e#837#838#0" expanded="true" />
-                <element signature="e#885#886#0" expanded="true" />
-                <element signature="e#925#926#0" expanded="true" />
-                <element signature="e#955#956#0" expanded="true" />
-                <element signature="e#984#985#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GenericDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/daycare/persistence/GenericDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-330">
-              <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Database.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/daycare/persistence/Database.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+            <state relative-caret-position="594">
+              <caret line="33" column="15" lean-forward="false" selection-start-line="33" selection-start-column="15" selection-end-line="33" selection-end-column="15" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestUserGenerator.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/daycare/persistence/TestUserGenerator.java">
+      <file leaf-file-name="home.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/role1/home.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="61" column="0" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <marker date="1541120607766" expanded="true" signature="1265:1367" ph="INSERT INTO user... " />
-                <marker date="1541120607766" expanded="true" signature="1685:1799" ph="INSERT INTO role... " />
-                <marker date="1541120607766" expanded="true" signature="2161:2263" ph="INSERT INTO user... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserDaoTest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/daycare/persistence/UserDaoTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1020">
-              <caret line="63" column="45" lean-forward="false" selection-start-line="63" selection-start-column="45" selection-end-line="63" selection-end-column="45" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="hibernate.cfg.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/hibernate.cfg.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="10" column="64" lean-forward="true" selection-start-line="10" selection-start-column="64" selection-end-line="10" selection-end-column="64" />
+            <state relative-caret-position="340">
+              <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="database.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/database.properties">
+      <file leaf-file-name="manage-users.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/role1/manage-users.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="342">
+              <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HomeServlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/daycare/controller/HomeServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="576">
+              <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="34" selection-end-column="46" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PropertiesLoader.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/daycare/utility/PropertiesLoader.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="54">
-              <caret line="3" column="17" lean-forward="false" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+              <caret line="3" column="28" lean-forward="false" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ResultsServlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/daycare/controller/ResultsServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-60">
+              <caret line="21" column="33" lean-forward="false" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="results.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/role1/results.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="342">
+              <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="getRevisedDate.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/getRevisedDate.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="810">
+              <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="context.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/META-INF/context.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -150,7 +178,10 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JUnit5 Test Class" />
+        <option value="CSS File" />
         <option value="Class" />
+        <option value="Jsp File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -178,9 +209,24 @@
         <option value="$PROJECT_DIR$/src/main/java/com/daycare/entity/User.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/daycare/persistence/Database.java" />
         <option value="$PROJECT_DIR$/src/test/resources/database.properties" />
-        <option value="$PROJECT_DIR$/src/test/java/com/daycare/persistence/TestUserGenerator.java" />
         <option value="$PROJECT_DIR$/src/test/resources/hibernate.cfg.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/com/daycare/persistence/TestUserGenerator.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/daycare/persistence/UserDaoTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/daycare/persistence/RoleDaoTest.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/head-tag.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/footer.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/login.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/login-error.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/css/styles.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/role1/home.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/role1/manage-users.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/daycare/controller/HomeServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/daycare/utility/PropertiesLoader.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/daycare/controller/ResultsServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/role1/results.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/getRevisedDate.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/META-INF/context.xml" />
       </list>
     </option>
   </component>
@@ -189,6 +235,13 @@
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -279,6 +332,15 @@
               <item name="daycare" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="daycare" type="462c0819:PsiDirectoryNode" />
+              <item name="utility" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="daycare" type="b2602c69:ProjectViewProjectNode" />
+              <item name="daycare" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -287,6 +349,22 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="daycare" type="b2602c69:ProjectViewProjectNode" />
+              <item name="daycare" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="daycare" type="b2602c69:ProjectViewProjectNode" />
+              <item name="daycare" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="role1" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="daycare" type="b2602c69:ProjectViewProjectNode" />
@@ -351,6 +429,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -372,7 +451,57 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.UserDaoTest">
+  <component name="RunManager" selected="TomEE Server.tomcat">
+    <configuration name="RoleDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.daycare.persistence.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="daycare" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.daycare.persistence" />
+      <option name="MAIN_CLASS_NAME" value="com.daycare.persistence.RoleDaoTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="RoleDaoTest.addRole" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.daycare.persistence.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="daycare" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.daycare.persistence" />
+      <option name="MAIN_CLASS_NAME" value="com.daycare.persistence.RoleDaoTest" />
+      <option name="METHOD_NAME" value="addRole" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
     <configuration name="UserDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -505,8 +634,15 @@
       <listeners />
     </configuration>
     <configuration name="tomcat" type="TomeeConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="TomEE 8.5.3" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/Daycare/" />
       <option name="UPDATING_POLICY" value="restart-server" />
-      <deployment />
+      <deployment>
+        <artifact name="daycare:war">
+          <settings>
+            <option name="CONTEXT_PATH" value="/Daycare" />
+          </settings>
+        </artifact>
+      </deployment>
       <server-settings>
         <option name="BASE_DIRECTORY_NAME" value="Unnamed_daycare" />
       </server-settings>
@@ -568,17 +704,24 @@
         <option name="Make" enabled="false" />
         <option name="Maven.BeforeRunTask" enabled="true" file="$PROJECT_DIR$/pom.xml" goal="clean" />
         <option name="Maven.BeforeRunTask" enabled="true" file="$PROJECT_DIR$/pom.xml" goal="install" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="daycare:war" />
+        </option>
       </method>
     </configuration>
-    <list size="3">
+    <list size="5">
       <item index="0" class="java.lang.String" itemvalue="TomEE Server.tomcat" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.UserDaoTest" />
       <item index="2" class="java.lang.String" itemvalue="JUnit.UserDaoTest.deleteUser" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.RoleDaoTest" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.RoleDaoTest.addRole" />
     </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.UserDaoTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.UserDaoTest.deleteUser" />
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.RoleDaoTest.addRole" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.RoleDaoTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.UserDaoTest" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.UserDaoTest.deleteUser" />
       </list>
     </recent_temporary>
   </component>
@@ -592,12 +735,21 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1541103029724</updated>
-      <workItem from="1541103040172" duration="10407000" />
+      <workItem from="1541103040172" duration="15876000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
+    <history-entry file="RoleDaoTest - 2018.11.02 at 11h 15m 09s.xml">
+      <configuration name="RoleDaoTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RoleDaoTest_addRole - 2018.11.02 at 11h 16m 17s.xml">
+      <configuration name="RoleDaoTest.addRole" configurationId="JUnit" />
+    </history-entry>
     <history-entry file="UserDaoTest - 2018.11.01 at 19h 55m 39s.xml">
+      <configuration name="UserDaoTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserDaoTest - 2018.11.01 at 20h 17m 46s.xml">
       <configuration name="UserDaoTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="UserDaoTest_deleteUser - 2018.11.01 at 20h 03m 52s.xml">
@@ -617,7 +769,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10407000" />
+    <option name="totallyTimeSpent" value="15876000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="57" y="-4" width="2499" height="1303" extended-state="6" />
@@ -746,7 +898,7 @@
         <state relative-caret-position="144">
           <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -769,38 +921,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/daycare/entity/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#652#653#0" expanded="true" />
-            <element signature="e#683#684#0" expanded="true" />
-            <element signature="e#731#732#0" expanded="true" />
-            <element signature="e#771#772#0" expanded="true" />
-            <element signature="e#806#807#0" expanded="true" />
-            <element signature="e#837#838#0" expanded="true" />
-            <element signature="e#885#886#0" expanded="true" />
-            <element signature="e#925#926#0" expanded="true" />
-            <element signature="e#955#956#0" expanded="true" />
-            <element signature="e#984#985#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/daycare/placeholder.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
           <caret line="2" column="24" lean-forward="false" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/daycare/persistence/Database.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -810,7 +934,7 @@
         <state relative-caret-position="108">
           <caret line="6" column="28" lean-forward="false" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -831,6 +955,63 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/hibernate.cfg.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="64" lean-forward="false" selection-start-line="10" selection-start-column="64" selection-end-line="10" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/head-tag.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/daycare/persistence/RoleDaoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="20" column="35" lean-forward="false" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/daycare/persistence/UserDaoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="882">
+          <caret line="49" column="39" lean-forward="false" selection-start-line="49" selection-start-column="39" selection-end-line="49" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/daycare/persistence/TestUserGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="606">
+          <caret line="61" column="54" lean-forward="false" selection-start-line="61" selection-start-column="54" selection-end-line="61" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1541175283107" expanded="true" signature="1265:1367" ph="INSERT INTO user... " />
+            <marker date="1541175283107" expanded="true" signature="1685:1799" ph="INSERT INTO role... " />
+            <marker date="1541175283107" expanded="true" signature="2161:2263" ph="INSERT INTO user... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/daycare/persistence/Database.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/daycare/persistence/GenericDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-330">
@@ -841,34 +1022,141 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/daycare/persistence/TestUserGenerator.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/daycare/entity/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="61" column="0" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+        <state relative-caret-position="504">
+          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1541120607766" expanded="true" signature="1265:1367" ph="INSERT INTO user... " />
-            <marker date="1541120607766" expanded="true" signature="1685:1799" ph="INSERT INTO role... " />
-            <marker date="1541120607766" expanded="true" signature="2161:2263" ph="INSERT INTO user... " />
+            <element signature="e#652#653#0" expanded="true" />
+            <element signature="e#683#684#0" expanded="true" />
+            <element signature="e#731#732#0" expanded="true" />
+            <element signature="e#771#772#0" expanded="true" />
+            <element signature="e#806#807#0" expanded="true" />
+            <element signature="e#837#838#0" expanded="true" />
+            <element signature="e#885#886#0" expanded="true" />
+            <element signature="e#925#926#0" expanded="true" />
+            <element signature="e#955#956#0" expanded="true" />
+            <element signature="e#984#985#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/hibernate.cfg.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/footer.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
-          <caret line="10" column="64" lean-forward="true" selection-start-line="10" selection-start-column="64" selection-end-line="10" selection-end-column="64" />
+          <caret line="10" column="7" lean-forward="false" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/daycare/persistence/UserDaoTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/login.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1020">
-          <caret line="63" column="45" lean-forward="false" selection-start-line="63" selection-start-column="45" selection-end-line="63" selection-end-column="45" />
+        <state relative-caret-position="252">
+          <caret line="14" column="51" lean-forward="false" selection-start-line="14" selection-start-column="51" selection-end-line="14" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/login-error.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="51" lean-forward="false" selection-start-line="14" selection-start-column="51" selection-end-line="14" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-222">
+          <caret line="358" column="29" lean-forward="false" selection-start-line="358" selection-start-column="29" selection-end-line="358" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="33" column="15" lean-forward="false" selection-start-line="33" selection-start-column="15" selection-end-line="33" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/role1/home.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/role1/manage-users.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/daycare/utility/PropertiesLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="28" lean-forward="false" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/daycare/controller/HomeServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="34" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/daycare/controller/ResultsServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-60">
+          <caret line="21" column="33" lean-forward="false" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/role1/results.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/getRevisedDate.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="810">
+          <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/META-INF/context.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

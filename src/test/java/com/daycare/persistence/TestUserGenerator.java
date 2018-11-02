@@ -59,7 +59,7 @@ public class TestUserGenerator {
                     + "(user_name, password) "
                     + "VALUES (?, ?)");
 
-            preparedStatement4.setString(1, "employee4");
+            preparedStatement4.setString(1, "employee2");
             preparedStatement4.setString(2, "daycare");
             rowsAdded = preparedStatement4.executeUpdate();
             logger.info("User Rows Added: " + rowsAdded);

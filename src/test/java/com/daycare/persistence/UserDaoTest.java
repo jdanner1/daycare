@@ -29,11 +29,11 @@ class UserDaoTest {
 
     @Test
     void addUser() {
-        User user = new User("employee2", "daycare");
+        User user = new User("employee3", "daycare");
         int userID = genericDao.addEntity(user);
         assertNotEquals(0, userID);
         User addedUser = (User)genericDao.getEntityByID(userID);
-        assertEquals("employee2", addedUser.getUserName());
+        assertEquals("employee3", addedUser.getUserName());
     }
 
 
