@@ -10,7 +10,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a href="mailto:support@atv.com?Subject=Customer%20Inquiry"
+            <a href="mailto:support@daycare.com?Subject=Customer%20Inquiry"
                target="_top"
                class="navbar-brand">SUPPORT@DAYCARE</a>
         </div>

@@ -355,8 +355,8 @@ html {
 
 header, footer {
     padding: 1em;
-    color: white;
-    background-color: #ffffb3;
+    color: black;
+    background-color: #ffff99;
     clear: left;
     text-align: center;
 }
@@ -386,7 +386,7 @@ img  {
 }
 
 .whitetext:hover, .whitetext:focus    {
-    color: black;
+    color: white;
 }
 
 .boldtext   {
@@ -402,11 +402,12 @@ img  {
 }
 
 .jumbotron   {
-    background-color: #ffffb3;
+    background-color: #ffff99;
     text-align: center;
     max-width: 100%;
     height: auto;
     margin-bottom: 0;
+    color: black;
 }
 
 .icons   {
@@ -443,11 +444,27 @@ img  {
     margin-right: 2em;
 }
 
+.black  {
+    color:black;
+}
+
+.userTable  {
+    color: white;
+}
+
+.buttonSpacer  {
+    margin-left: 2em;
+}
+
+.editList  {
+    margin-left: 2em;
+}
+
 footer {
     margin-bottom: 5px;
     padding-bottom: 25px;
     font-size: 13px;
-    color: white;
+    color: black;
     width: 100%;
     height: 3em;
     border-radius: .3em;

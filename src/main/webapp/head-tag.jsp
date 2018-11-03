@@ -13,6 +13,11 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
     <script src="js/getRevisedDate.js" language="javascript" type="text/javascript"></script>
+    <script type="text/javascript" class="init">
+        $(document).ready( function () {
+            $('#userTable').DataTable();
+        } );
+    </script>
     <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 

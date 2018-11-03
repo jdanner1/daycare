@@ -22,7 +22,7 @@ public class Role {
     @Column(name = "user_name")
     private String userName;
 
-    @ManyToOne
+    @OneToOne
     @JoinColumn(name = "userId",
             foreignKey = @ForeignKey(name = "role_user_userId"))
     private User user;

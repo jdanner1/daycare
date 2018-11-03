@@ -1,9 +1,11 @@
 <footer>
 
     <p id="script">
-        <script language="JavaScript" type="text/javascript">
+        <span class="black">
+            <script language="JavaScript" type="text/javascript">
             getRevisedDate();
-        </script>
+            </script>
+        </span>
     </p>
 </footer>
 </div>
