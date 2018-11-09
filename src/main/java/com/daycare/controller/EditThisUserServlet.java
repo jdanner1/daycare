@@ -8,6 +8,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
+
+
 /**
  * Controls the intake of page requests and forwards to the associated JSP.
  *
@@ -15,10 +17,10 @@ import java.io.IOException;
  *
  */
 @WebServlet(
-        name = "DeleteUser",
-        urlPatterns = {"/DeleteUser"}
+        name = "EditThisUser",
+        urlPatterns = {"/EditThisUser"}
 )
-public class DeleteUser extends HttpServlet {
+public class EditThisUserServlet extends HttpServlet {
 
     /**
      * Forwards request and response objects to the JSP page.
@@ -29,12 +31,11 @@ public class DeleteUser extends HttpServlet {
     public void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
-        String url = "/role1/delete-user.jsp";
+        String url = "/role1/edit-this-user.jsp";
         RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);
         dispatcher.forward(request, response);
     }
 }
-
 
 
 

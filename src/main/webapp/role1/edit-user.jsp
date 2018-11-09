@@ -49,7 +49,7 @@
                   method="post"
                   name="edit-user-form"
                   id="edit-user-form"
-                  action="http://itins3.madisoncollege.edu/echo.php">
+                  action="EditUserAction">
 
                 <div class="form-group">
                     <label class="control-label">Which User to Edit?</label>
@@ -57,7 +57,7 @@
 
                     <c:forEach var="user" items="${users}">
                         <div class="col-sm-9">
-                            <input class="form-check-input" type="radio" name="userName"  value="${user.userName}" /> <span style="color:white;">${user.userName}</span>
+                            <input class="form-check-input" type="radio" name="userName"  value="${user.userId}" /> <span style="color:white;">${user.userName}</span>
                         </div>
 
                     </c:forEach>
