@@ -42,14 +42,35 @@
                 </tbody>
             </table>
         </div>
-        <br /><br /><br />
 
-        <div class="row">
-            <a href="AddUser" class="btn btn-default">Add User</a>
+        <div class="row editList">
 
-            <span class="buttonSpacer"><a href="EditUser" class="btn btn-default">Edit User</a></span>
+            <form class="form-horizontal"
+                  method="post"
+                  name="delete-user-form"
+                  id="delete-user-form"
+                  action="DeleteUserAction">
 
-            <span class="buttonSpacer"><a href="DeleteUser" class="btn btn-default">Delete User</a></span>
+                <div class="form-group">
+                    <label class="control-label">Which User to Delete?</label>
+                    <br /><br /><br /><br />
+
+                    <c:forEach var="user" items="${users}">
+                        <div class="col-sm-9">
+                            <input class="form-check-input" type="radio" name="userName"  value="${user.userId}" /> <span style="color:white;">${user.userName}</span>
+                        </div>
+
+                    </c:forEach>
+                </div>
+
+                <input type="submit"
+                       value="Submit"
+                       class="buttons form-button" />
+
+
+            </form>
+
+
         </div>
 
 

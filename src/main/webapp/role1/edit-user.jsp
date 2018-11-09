@@ -63,8 +63,6 @@
                     </c:forEach>
                 </div>
 
-
-
                     <input type="submit"
                            value="Submit"
                            class="buttons form-button" />

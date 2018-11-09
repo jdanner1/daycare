@@ -21,9 +21,9 @@
         </div>
     </div>
     <div class="panel panel-info">
-        <div class="panel-heading"><h3>Find Family Contact Information for Students</h3></div>
+        <div class="panel-heading" style="background-color: #ffff99; font-size: 14px; color: black; font-family: Calibri, Arial, sans-serif;"><h3>Find Family Contact Information for Students</h3></div>
         <div class="panel-body">
-            <p class="bigger">Authorized users only.  New user?  Use email link above for access; include your employeeID in the request.</p>
+            <p>Authorized users only.  New user?  Use email link above for access; include your employeeID in the request.</p>
         </div>
     </div>
 

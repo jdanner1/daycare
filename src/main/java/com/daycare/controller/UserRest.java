@@ -12,7 +12,7 @@ import javax.ws.rs.core.MediaType;
 import java.util.List;
 
 
-@Path("/userRest")
+@Path("/users")
 public class UserRest {
     private GenericDao genericDao;
 

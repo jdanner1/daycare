@@ -460,6 +460,12 @@ img  {
     margin-left: 2em;
 }
 
+.panel-heading  {
+    background-color: #ffff99;
+    color: black;
+    font-family: Calibri, Arial, sans-serif;
+}
+
 footer {
     margin-bottom: 5px;
     padding-bottom: 25px;

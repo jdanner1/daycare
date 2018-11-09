@@ -35,7 +35,6 @@ public class GenericDao<T> {
         return entity;
     }
 
-
     public void deleteEntity(T entity)  {
         Session session = getSession();
         Transaction transaction = session.beginTransaction();
