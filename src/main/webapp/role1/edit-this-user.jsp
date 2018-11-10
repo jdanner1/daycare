@@ -37,7 +37,7 @@
         <div class="form-group">
             <label class="control-label col-sm-3">User Name</label>
             <div class="col-sm-9">
-                <input class="form-control" type="text" placeholder="${user.userName}" name="userName"/>
+                <input class="form-control" type="text" placeholder="${user.userName}" name="userName" />
             </div>
         </div>
 
@@ -49,9 +49,13 @@
         </div>
 
         <div class="form-group">
-            <label class="control-label col-sm-3">Role</label>
+            <label class="control-label col-sm-3">Status</label>
             <div class="col-sm-9">
-                <input class="form-control" type="text" placeholder="${role.roleName}" name="role" />
+                <select class="form-control" name="role">
+                    <option disabled selected value>Select One</option>
+                    <option value="role1">Basic</option>
+                    <option value="admin">Administrator</option>
+                </select>
             </div>
         </div>
 
@@ -68,7 +72,8 @@
                    class="buttons form-button" />
         </div>
 
-
     </form>
     <div class="col-sm-3"></div>
 </div>
+
+<%@ include file="../footer.jsp" %>
