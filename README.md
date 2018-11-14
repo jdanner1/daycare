@@ -14,13 +14,10 @@ There must also be capability to maintain users.
 
 * Security/Authentication
   * Tomcat's JDBC Realm Authentication
-  * Admin role: create/read/update/delete (crud) of all data
-  * User role: create trail, create trail report, edit data they have entered previously
-  * All: anyone can view trail information (no login)
+  * Only authorized users from daycare can sign in
 * Database
   * MySQL
-  * Store users and roles
-  * Store all data for the trails and reports
+  * Store contacts and students information
 * ORM Framework
   * Hibernate 5
 * Dependency Management
@@ -28,32 +25,22 @@ There must also be capability to maintain users.
 * Web Services consumed using Java
   * School contact REST service
 * CSS 
-  * Bootstrap 
-* Data Validation
-  * Bootstrap Validator for front end
-  * Explore Hibernate's validation
+  * Bootstrap
 * Logging
   * Configurable logging using Log4J2. In production, only errors will normally be logged, but logging at a debug level can be turned on to facilitate trouble-shooting. 
 * Hosting
   * AWS
 * Independent Research Topic/s
-  * CI tools in AWS
-  * Materialize
-  * Google Maps API
-  * Hibernate Validation
-  * Hibernat Search
-* Project Lombok to eliminate boilerplate code like getters/setters/equals
+  * Java Objects to JSON conversion
 * Unit Testing
   * JUnit tests to achieve 80%+ code coverage 
 * IDE: IntelliJ IDEA
 
 
-### Design
+### [Project Plan](Documentation/projectPlan.docx)
 
-* [Screen Design](Project_Documentation/Individual_Project_Screens.pdf)
-* [Application Flow](DesignDocuments/applicationFlow.md)
-* [Database Design](DesignDocuments/databaseDiagram.png)
+### [Development Journal](Documentation/Journal.md)
 
-### [Project Plan](Project_Documentation/Individual_Project_Plan.docx)
+### [Progress Log](Documentation/progressLog.md)
 
-### [Development Journal](Journal.md)
+
