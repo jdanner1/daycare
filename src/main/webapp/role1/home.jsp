@@ -34,6 +34,8 @@
           action="http://itins3.madisoncollege.edu/echo.php"
           method="post">
 
+        <h3 style="color: white;">${students}</h3>
+
         <div class="form-group">
             <label class="control-label col-sm-3">Select Student</label>
             <div class="col-sm-9">

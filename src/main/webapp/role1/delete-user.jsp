@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<c:set var="title" value="Search Results" />
+<c:set var="title" value="Delete User" />
 <%@ include file="../head-tag.jsp" %>
 
 <nav class="navbar navbar-inverse">

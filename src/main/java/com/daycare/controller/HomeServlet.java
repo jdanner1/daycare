@@ -3,6 +3,7 @@ package com.daycare.controller;
 import com.daycare.entity.User;
 import com.daycare.utility.PropertiesLoader;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.google.gson.Gson;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.junit.jupiter.api.Test;
@@ -48,14 +49,17 @@ public class HomeServlet extends HttpServlet implements PropertiesLoader {
             throws ServletException, IOException {
 
         String serviceResponse = getStudentList();
-        createObjects(serviceResponse);
+        /*createObjects(serviceResponse); */
+
+        HttpSession session = request.getSession();
+        session.setAttribute("students", serviceResponse);
 
         String url = "/role1/home.jsp";
         RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);
         dispatcher.forward(request, response);
     }
 
-    private void createObjects(String serviceResponse) {
+   private void createObjects(String serviceResponse) {
         ObjectMapper mapper = new ObjectMapper();
         /*  Fill in once we have the service - will use the pojogenerator to create in the entity package when we have json, may adjust this method to return resultsItem or even the student List.
         Response results = mapper.readValue(response, Response.class);
@@ -65,14 +69,14 @@ public class HomeServlet extends HttpServlet implements PropertiesLoader {
     }
 
     private String getStudentList()  {
-        String studentListOperation = "planets/3/";
+        String studentListOperation = "daycareSearch";
         String response = "";
         try {
             Properties properties = loadProperties(FILE_PATH);
             Client client = ClientBuilder.newClient();
             String call = properties.getProperty("service.endpoint") + studentListOperation;
             WebTarget target = client.target(call);
-            String serviceResponse = target.request(MediaType.APPLICATION_JSON).get(String.class);
+            String serviceResponse = target.request(MediaType.TEXT_PLAIN).get(String.class);  //"text/plain"  APPLICATION_JSON
             response =  serviceResponse;
         } catch (Exception exception) {
             logger.error("Exception for Properties: " + exception);
