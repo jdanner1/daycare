@@ -35,6 +35,8 @@ There must also be capability to maintain users.
 * Unit Testing
   * JUnit tests to achieve 80%+ code coverage 
 * IDE: IntelliJ IDEA
+* Resources provided
+  *text
 
 
 ### [Project Plan](Documentation/projectPlan.docx)
