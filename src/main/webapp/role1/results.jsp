@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html lang="en">
 <%@ include file="../head-tag.jsp" %>
@@ -23,5 +24,42 @@
         </div>
     </div>
 </nav>
+
+<div class="container-fluid">
+    <h2 style="color: white;">Contacts: </h2>
+    <br /><br />
+
+    <table class="all">
+        <tr>
+            <td class="header col-md-1" style="color: white;"><strong>First Name</strong></td>
+            <td class="header col-md-1" style="color: white;"><strong>Last Name</strong></td>
+            <td class="header col-md-1" style="color: white;"><strong>Relationship</strong></td>
+            <td class="header col-md-2" style="color: white;"><strong>Cell Phone</strong></td>
+            <td class="header col-md-2" style="color: white;"><strong>Work Phone</strong></td>
+            <td class="header col-md-2" style="color: white;"><strong>Address</strong></td>
+            <td class="header col-md-1" style="color: white;"><strong>City</strong></td>
+            <td class="header col-md-1" style="color: white;"><strong>State</strong></td>
+            <td class="header col-md-1" style="color: white;"><strong>Zip</strong></td>
+            <td class="header col-md-1" style="color: white;"><strong>Email</strong></td>
+        </tr>
+
+        <c:forEach var="currentContact" items="${contacts}">
+            <tr>
+                <td class="allCells col-md-1" style="color: white;">${currentContact.firstName}</td>
+                <td class="allCells col-md-1" style="color: white;">${currentContact.lastName}</td>
+                <td class="allCells col-md-1" style="color: white;">${currentContact.relationshipToStudent}</td>
+                <td class="allCells col-md-2" style="color: white;">${currentContact.cellPhone}</td>
+                <td class="allCells col-md-2" style="color: white;">${currentContact.workPhone}</td>
+                <td class="allCells col-md-2" style="color: white;">${currentContact.address}</td>
+                <td class="allCells col-md-1" style="color: white;">${currentContact.city}</td>
+                <td class="allCells col-md-1" style="color: white;">${currentContact.state}</td>
+                <td class="allCells col-md-1" style="color: white;">${currentContact.zip}</td>
+                <td class="allCells col-md-1" style="color: white;">${currentContact.email}</td>
+
+            </tr>
+        </c:forEach>
+    </table>
+</div>
+<br /><br />
 
 <%@ include file="../footer.jsp" %>

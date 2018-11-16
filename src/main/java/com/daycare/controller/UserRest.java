@@ -9,6 +9,7 @@ import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
+import javax.ws.rs.core.Response;
 import java.util.List;
 
 
@@ -39,23 +40,21 @@ public class UserRest {
         ObjectMapper mapper = new ObjectMapper();
         jsonUsers = mapper.writeValueAsString(users);
 
-        return jsonUsers;
+        return jsonUsers; ////http://localhost:8080/Daycare/services/users
     }
-}
 
-/*
-@Path("/helloParam")
-public class HelloParam {
-
+    /*
     @GET
-    @Produces("text/plain")
-    @Path("{firstName}/{lastName}")
-    public Response getDate(
-            @PathParam("firstName") String firstName,
-            @PathParam("lastName") String lastName) {
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response getMyBeans() throws Exception {
+        genericDao = new GenericDao(User.class);
+        String jsonUsers = "";
+        List<User> users = genericDao.getAll();
+        ObjectMapper mapper = new ObjectMapper();
+        jsonUsers = mapper.writeValueAsString(users);
 
-        String output = "Hello " + firstName + " " + lastName;
-        return Response.status(200).entity(output).build();
-    }
+        return Response.status(200).entity(jsonUsers).build();  //http://localhost:8080/Daycare/services/users
+    } */
 }
- */
+
+
