@@ -27,37 +27,39 @@
 
 <div class="container-fluid">
     <h2 style="color: white;">Contacts: </h2>
+    <br /><br />
 
     <table class="all">
         <tr>
-            <td class="header" style="color: white; margin: 1em;"><strong>First Name</strong></td>
-            <td class=header" style="color: white; margin: 1em;"><strong>Last Name</strong></td>
-            <td class="header" style="color: white; margin: 1em;"><strong>Relationship</strong></td>
-            <td class="header" style="color: white; margin: 1em;"><strong>Cell Phone</strong></td>
-            <td class="header" style="color: white; margin: 1em;"><strong>Work Phone</strong></td>
-            <td class="header" style="color: white; margin: 1em;"><strong>Address</strong></td>
-            <td class="header" style="color: white; margin: 1em;"><strong>City</strong></td>
-            <td class="header"style="color: white; margin: 1em;"><strong>State</strong></td>
-            <td class="header" style="color: white; margin: 1em;"><strong>Zip</strong></td>
-            <td class="header" style="color: white; margin: 1em;"><strong>Email</strong></td>
+            <td class="header col-md-1" style="color: white;"><strong>First Name</strong></td>
+            <td class="header col-md-1" style="color: white;"><strong>Last Name</strong></td>
+            <td class="header col-md-1" style="color: white;"><strong>Relationship</strong></td>
+            <td class="header col-md-2" style="color: white;"><strong>Cell Phone</strong></td>
+            <td class="header col-md-2" style="color: white;"><strong>Work Phone</strong></td>
+            <td class="header col-md-2" style="color: white;"><strong>Address</strong></td>
+            <td class="header col-md-1" style="color: white;"><strong>City</strong></td>
+            <td class="header col-md-1" style="color: white;"><strong>State</strong></td>
+            <td class="header col-md-1" style="color: white;"><strong>Zip</strong></td>
+            <td class="header col-md-1" style="color: white;"><strong>Email</strong></td>
         </tr>
 
         <c:forEach var="currentContact" items="${contacts}">
             <tr>
-                <td class="allCells" style="color: white; margin: 1em;">${currentContact.firstName}</td>
-                <td class="allCells" style="color: white; margin: 1em;">${currentContact.lastName}</td>
-                <td class="allCells" style="color: white; margin: 1em;">${currentContact.relationshipToStudent}</td>
-                <td class="allCells" style="color: white; margin: 1em;">${currentContact.cellPhone}</td>
-                <td class="allCells" style="color: white; margin: 1em;">${currentContact.workPhone}</td>
-                <td class="allCells" style="color: white; margin: 1em;">${currentContact.address}</td>
-                <td class="allCells" style="color: white; margin: 1em;">${currentContact.city}</td>
-                <td class="allCells" style="color: white; margin: 1em;">${currentContact.state}</td>
-                <td class="allCells" style="color: white; margin: 1em;">${currentContact.zip}</td>
-                <td class="allCells" style="color: white; margin: 1em;">${currentContact.email}</td>
+                <td class="allCells col-md-1" style="color: white;">${currentContact.firstName}</td>
+                <td class="allCells col-md-1" style="color: white;">${currentContact.lastName}</td>
+                <td class="allCells col-md-1" style="color: white;">${currentContact.relationshipToStudent}</td>
+                <td class="allCells col-md-2" style="color: white;">${currentContact.cellPhone}</td>
+                <td class="allCells col-md-2" style="color: white;">${currentContact.workPhone}</td>
+                <td class="allCells col-md-2" style="color: white;">${currentContact.address}</td>
+                <td class="allCells col-md-1" style="color: white;">${currentContact.city}</td>
+                <td class="allCells col-md-1" style="color: white;">${currentContact.state}</td>
+                <td class="allCells col-md-1" style="color: white;">${currentContact.zip}</td>
+                <td class="allCells col-md-1" style="color: white;">${currentContact.email}</td>
 
             </tr>
         </c:forEach>
     </table>
 </div>
+<br /><br />
 
 <%@ include file="../footer.jsp" %>

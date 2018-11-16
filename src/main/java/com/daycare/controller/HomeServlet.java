@@ -77,7 +77,7 @@ public class HomeServlet extends HttpServlet implements PropertiesLoader {
     }
 
     private String getStudentList()  {
-        String studentListOperation = "students";
+        String studentListOperation = "students/96b7ccce-5d5f-42f7-9701-1d53941f39a3";
         String response = "";
         try {
             Properties properties = loadProperties(FILE_PATH);

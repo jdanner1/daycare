@@ -466,6 +466,14 @@ img  {
     font-family: Calibri, Arial, sans-serif;
 }
 
+.allCells  {
+    margin: 1.5em;
+}
+
+.header   {
+    margin: 1.5em;
+}
+
 footer {
     margin-bottom: 5px;
     padding-bottom: 25px;
