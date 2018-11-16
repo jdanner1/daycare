@@ -31,7 +31,7 @@
     <form class="form-horizontal col-sm-8"
           id="vocalization-form"
           name="vocalization-form"
-          action="http://itins3.madisoncollege.edu/echo.php"
+          action="HomeAction"
           method="post">
 
         <div class="form-group">

@@ -1,5 +1,6 @@
 package com.daycare.controller;
 
+import com.daycare.ContactResults;
 import com.daycare.Results;
 import com.daycare.entity.Role;
 import com.daycare.entity.User;
@@ -60,8 +61,9 @@ public class HomeActionServlet extends HttpServlet implements PropertiesLoader {
 
 
         HttpSession session = request.getSession();
+        session.setAttribute("contacts", contactResults);
 
-        String url = "ContactServlet";
+        String url = "Results";
         response.sendRedirect(url);
 
     }
