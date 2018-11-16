@@ -37,7 +37,7 @@
         <div class="form-group">
             <label class="control-label col-sm-3">Select Student</label>
             <div class="col-sm-9">
-                <select class="form-control" name="language">
+                <select class="form-control" name="student">
                     <option disabled selected value>Select One</option>
                     <c:forEach var="student" items="${students}">
                         <option value="${student.studentID}">${student.studentID} ${student.firstName} ${student.lastName}</option>
