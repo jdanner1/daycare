@@ -13,7 +13,7 @@ import java.io.IOException;
 
 
 /**
- *
+ * Handles requests to delete a user, deletes and sends user back to management utility.
  *
  *@author    John Danner
  */

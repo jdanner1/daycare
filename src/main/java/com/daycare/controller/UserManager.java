@@ -8,6 +8,10 @@ import org.hibernate.Session;
 import org.hibernate.Transaction;
 import java.util.List;
 
+/**
+ * The type User manager.
+ * @author John Danner
+ */
 public class UserManager {
     private Session getSession() {
         return SessionFactoryProvider.getSessionFactory().openSession();
@@ -16,6 +20,11 @@ public class UserManager {
     private final Logger logger = LogManager.getLogger(this.getClass());
 
 
+    /**
+     * Gets users.
+     *
+     * @return the users
+     */
     public List<User> getUsers() {
         List<User> users = null;
         Session session = getSession();

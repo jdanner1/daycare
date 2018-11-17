@@ -13,7 +13,7 @@ import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
 /**
- *
+ * Takes user to the page showing contact details.
  *
  *@author    John Danner
  */

@@ -15,8 +15,8 @@ import java.io.IOException;
 
 /**
  *
- *
- *@author    John Danner
+ * Handles updating a user, makes the change and sends user back to management utility.
+ * @author    John Danner
  */
 @WebServlet(
         name = "EditThisUserAction",
@@ -30,13 +30,11 @@ public class EditThisUserActionServlet extends HttpServlet {
 
     /**
      *  Handles HTTP GET requests.
-     *
      *@param  request               the HttpRequest
      *@param  response              the HttpResponse
      *@exception ServletException  if there is a general
      *                              servlet exception
      *@exception IOException       if there is a general
-     *                              I/O exception
      */
     public void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {

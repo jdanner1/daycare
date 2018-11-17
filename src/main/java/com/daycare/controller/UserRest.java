@@ -13,14 +13,43 @@ import javax.ws.rs.core.Response;
 import java.util.List;
 
 
+/**
+ * The type User rest.
+ * @author John Danner
+ */
 @Path("/users")
 public class UserRest {
     private GenericDao genericDao;
 
+    /**
+     * Gets my bean.
+     *
+     * @return the my bean
+     * @throws Exception the exception
+     */
+    @GET
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response getMyBean() throws Exception {
+        genericDao = new GenericDao(User.class);
+        String jsonUsers = "";
+        List<User> users = genericDao.getAll();
+        ObjectMapper mapper = new ObjectMapper();
+        jsonUsers = mapper.writeValueAsString(users);
+
+        return Response.status(200).entity(jsonUsers).build();
+    }
+
+    /**
+     * Gets my beans.
+     *
+     * @param userId the user id
+     * @return the my beans
+     * @throws Exception the exception
+     */
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     @Path("{userId}")
-    public String getMyBeans(@PathParam("userId") String userId) throws Exception {
+    public Response getMyBeans(@PathParam("userId") String userId) throws Exception {
         genericDao = new GenericDao(User.class);
         String jsonUsers = "";
         int id = Integer.parseInt(userId);
@@ -28,33 +57,8 @@ public class UserRest {
         ObjectMapper mapper = new ObjectMapper();
         jsonUsers = mapper.writeValueAsString(user);
 
-        return jsonUsers;
+        return Response.status(200).entity(jsonUsers).build();
     }
-
-    @GET
-    @Produces(MediaType.APPLICATION_JSON)
-    public String getMyBean() throws Exception {
-        genericDao = new GenericDao(User.class);
-        String jsonUsers = "";
-        List<User> users = genericDao.getAll();
-        ObjectMapper mapper = new ObjectMapper();
-        jsonUsers = mapper.writeValueAsString(users);
-
-        return jsonUsers; ////http://localhost:8080/Daycare/services/users
-    }
-
-    /*
-    @GET
-    @Produces(MediaType.APPLICATION_JSON)
-    public Response getMyBeans() throws Exception {
-        genericDao = new GenericDao(User.class);
-        String jsonUsers = "";
-        List<User> users = genericDao.getAll();
-        ObjectMapper mapper = new ObjectMapper();
-        jsonUsers = mapper.writeValueAsString(users);
-
-        return Response.status(200).entity(jsonUsers).build();  //http://localhost:8080/Daycare/services/users
-    } */
 }
 
 

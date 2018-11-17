@@ -14,7 +14,7 @@ import java.io.IOException;
 
 
 /**
- *
+ * Determines the user that can be edited, sending user to the edit use screen.
  *
  *@author    John Danner
  */

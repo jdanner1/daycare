@@ -27,9 +27,12 @@ public class HomeServlet extends HttpServlet {
 
     /**
      * Forwards request and response objects to the JSP page.
-     *
      * @param response - the HttpServletResponse object
      * @param request - the HttpServletRequest object
+     * @exception ServletException  if there is a general
+     *                              servlet exception
+     * @exception IOException       if there is a general
+     *                              I/O exception
      */
     public void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {

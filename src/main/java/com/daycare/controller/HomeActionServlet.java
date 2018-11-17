@@ -14,7 +14,7 @@ import java.io.IOException;
 import java.util.List;
 
 /**
- *
+ * Takes student selection and triggers service call for contact details, making them available to the page it send the user to for display.
  *
  *@author    John Danner
  */

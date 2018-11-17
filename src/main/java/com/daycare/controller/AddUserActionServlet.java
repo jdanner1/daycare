@@ -14,7 +14,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
-/**
+/**  Servlet handles new user submissions, creating the user and sending user back to management utility
  *
  *
  *@author    John Danner
@@ -42,10 +42,8 @@ public class AddUserActionServlet extends HttpServlet {
     public void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
-
         genericDao = new GenericDao(User.class);
         genericDao2 = new GenericDao(Role.class);
-
 
         String userName = request.getParameter("userName");
         String password = request.getParameter("password");

@@ -6,7 +6,9 @@ import java.util.HashSet;
 import java.util.Set;
 
 
-
+/**
+ * The type User monitor.
+ */
 //Defines the base URI for all resource URIs.
 @ApplicationPath("/services")
 

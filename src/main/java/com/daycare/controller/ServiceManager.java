@@ -15,6 +15,10 @@ import javax.ws.rs.core.MediaType;
 import java.util.List;
 import java.util.Properties;
 
+/**
+ * The type Service manager.
+ * @author John Danner
+ */
 public class ServiceManager implements PropertiesLoader {
 
     private String FILE_PATH = "/properties.properties";
@@ -22,12 +26,23 @@ public class ServiceManager implements PropertiesLoader {
     private String restEndpointSuffix = "";
 
 
+    /**
+     * Gets student list.
+     *
+     * @return the student list
+     */
     protected String getStudentList()  {
         String response = "";
         response = getJson();
         return response;
     }
 
+    /**
+     * Gets contacts.
+     *
+     * @param studentID the student id
+     * @return the contacts
+     */
     protected String getContacts(int studentID)  {
         restEndpointSuffix = Integer.toString(studentID);
         String response = "";
@@ -35,6 +50,11 @@ public class ServiceManager implements PropertiesLoader {
         return response;
     }
 
+    /**
+     * Gets json.
+     *
+     * @return the json
+     */
     protected String getJson()  {
         String response = "";
         try {
@@ -50,6 +70,12 @@ public class ServiceManager implements PropertiesLoader {
         return response;
     }
 
+    /**
+     * Create contact results list.
+     *
+     * @param serviceResponse the service response
+     * @return the list
+     */
     protected List<ContactResults> createContactResults(String serviceResponse) {
         List<ContactResults> contacts = null;
         try  {
@@ -61,6 +87,12 @@ public class ServiceManager implements PropertiesLoader {
         return contacts;
     }
 
+    /**
+     * Create student results list.
+     *
+     * @param serviceResponse the service response
+     * @return the list
+     */
     protected List<Results> createStudentResults(String serviceResponse) {
         List<Results> students = null;
         try  {
