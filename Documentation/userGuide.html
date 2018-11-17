@@ -1,60 +1,74 @@
 <!DOCTYPE html>
 <html>
 <head>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="CSS/style.css" />
+
     <meta charset="UTF-8">
     <title>Daycare User Guide</title>
 </head>
 <body>
-    <h1>Daycare Attendee's</h1>
-    <h1>Contact Information User's Manual</h1>
+    <div class = "container">
+        <div class="jumbotron text-right">
+            <h1>Daycare Attendee's</h1>
+            <h1>Contact Information User's Manual</h1>
+        </div>
+        
 
+        <!--possible table of contents-->
 
-    <table>
-        <tr>
-            <td>Project</td>
-            <td>Web Service</td>
-        </tr>
-        <tr>
-            <td>Description</td>
-            <td>User's Manual</td>
-        </tr>
-        <tr>
-            <td>Authors</td>
-            <td>John Danner - Robert Collier - Kortney Bishell</td>
-        </tr>
-    </table>
+        <h2>PURPOSE</h2>
+        <p>Here at Kiddie Kollege Daycare we access our attendee's information through a St. Paul's Lutheran School web
+            service. This allows our children's contact information to be more accessible as needed. Information available
+            to us includes: Parents, Emergency Contacts, and Physicians. You'll have access to the contacts First Name,
+            Last Name, Address1, Address2, City, State, Zip, Email, Cell Phone, Work Phone, and their Relationship to the
+            child.</p>
 
-    <!--possible table of contents-->
+        <div class = "row">
+            <div class = "col-md-6 float-left text-center">
+                <h3>Interface</h3>
+                <img src="../images/home.png" alt="home" height="100" width="100">
+                <img src="../images/login.png" alt="login" height="100" width="100">
+                <img src="../images/selectstudent.png" alt="select student" height="100" width="100">
+                <img src="../images/output.png" alt="output" height="100" width="100">
+            </div>
+            <div class = "col-md-6 float-right text-center">
+            <h3>Directions</h3>
+                <ol class = "text-left">
+                    <li>Sign into the application using Username and Password.</li>
+                    <li>Click the drop down and select which student you need to access contact information for.</li>
+                    <li>You will then see all the contacts available to you listed on the screen</li>
+                </ol>
+            </div>
+        </div>
+        <!--this can obviously be changed to just json if we dont get any further-->
+        <h3>Output Formats Available</h3>
+        <select>
+            <option value="choose">choose format</option>
+            <option value="JSON">JSON</option>
+            <option value="html">html (not yet implemented)</option>
+            <option value="xml">xml (not yet implemented)</option>
+        </select>
 
-    <h2>PURPOSE</h2>
-     <p>Here at Kiddie Kollege Daycare we access our attendee's information through a St. Paul's Lutheran School web
-         service. This allows our children's contact information to be more accessible as needed. Information available
-         to us includes: Parents, Emergency Contacts, and Physicians. You'll have access to the contacts First Name,
-         Last Name, Address1, Address2, City, State, Zip, Email, Cell Phone, Work Phone, and their Relationship to the
-         child.</p>
-
-    <h3>Interface</h3>
-    <img src="images/home.png" alt="home" height="100" width="100">
-    <img src="images/login.png" alt="login" height="100" width="100">
-    <img src="images/selectstudent.png" alt="select student" height="100" width="100">
-    <img src="images/output.png" alt="output" height="100" width="100">
-
-    <h3>Directions</h3>
-    <ol>
-        <li>Sign into the application using Username and Password.</li>
-        <li>Click the drop down and select which student you need to access contact information for.</li>
-        <li>You will then see all the contacts available to you listed on the screen</li>
-    </ol>
-
-    <!--this can obviously be changed to just json if we dont get any further-->
-    <h3>Output Formats Available</h3>
-    <select>
-        <option value="choose">choose format</option>
-        <option value="JSON">JSON</option>
-        <option value="html">html</option>
-        <option value="xml">xml</option>
-    </select>
-
-
+        <hr />
+        <table class="table table-striped">
+                <tr>
+                    <td class = "label">Project:</td>
+                    <td>Web Service</td>
+                </tr>
+                <tr>
+                    <td class = "label">Description:</td>
+                    <td>User's Manual</td>
+                </tr>
+                <tr>
+                    <td class = "label">Authors:</td>
+                    <td>John Danner - Robert Collier - Kortney Bishell</td>
+                </tr>
+            </table>
+    </div>
 </body>
 </html>
