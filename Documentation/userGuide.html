@@ -36,6 +36,18 @@
                 <img src="../images/selectstudent.png" alt="select student" height="100" width="100">
                 <img src="../images/output.png" alt="output" height="100" width="100">
             </div>
+
+            <h3>Login</h3>
+            <p>
+                This web page is the first form the user will see when connected to our Web Service. The
+                user must be logged in in order to be able to make requests.
+
+                All fields are required while logging in.
+
+                The “UserName” and "Password" text boxes should be populated with only the credentials of the user
+                performing the query.
+            </p>
+
             <div class = "col-md-6 float-right text-center">
             <h3>Directions</h3>
                 <ol class = "text-left">
@@ -53,6 +65,40 @@
             <option value="html">html (not yet implemented)</option>
             <option value="xml">xml (not yet implemented)</option>
         </select>
+
+        <table>
+            <tr>
+                <td>
+                    JSON
+                </td>
+                <td>
+                    JSON or JavaScript Object Notation, is a lightweight text‐based open standard designed for
+                    human‐readable data interchange. It is derived from the JavaScript scripting language for
+                    representing simple data structures and associative arrays, called objects.
+                </td>
+                <td>
+                    By choosing JSON in the drop down tab under "Output Formats Available" gives the information back in JSON format.
+                    When the request is made a structure with an ID, First Name and Last Name of a student will return the details
+                    of the contacts linked to that student. The HTTP response will contain a valid status (200  “ok”)
+                    in JSON.
+                </td>
+            </tr>
+        </table>
+
+        <h3>Requests</h3>
+        <p>
+            Once the user logs into the service:
+
+            *(each user should be given log in credentials from the daycare for employment)*
+
+            A form allows the user to access all services from a single GUI.
+
+            This service extracts all the students, finds the particular student you entered,
+            grabs each of his/her contacts and outputs their information in a table format to the webpage.
+
+            The application will be accessible only to employees through a standard web browser simply
+            by accessing one of the URL's given through employment at Kiddie Kollege Daycare.
+        </p>
 
         <hr />
         <table class="table table-striped">
