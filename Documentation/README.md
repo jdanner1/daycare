@@ -36,7 +36,7 @@ City, State, Zip, Email, Cell Phone, Work Phone, Relationship.There must also be
 
 ### Design
 
-### [Project Plan](Documentation/projectPlan.docx)
-### [Development Journal](Documentation/Journal.md)
+### [Project Plan](Documentation/projectPlan.md)
+### [Development Journal](Documentation/journalEntry.md)
 ### [Progress Log](Documentation/progressLog.md)
-### [Development Journal](Journal.md)
+### [User Guide](Documentation/userGuide.html)

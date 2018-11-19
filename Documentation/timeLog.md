@@ -9,4 +9,6 @@
 | 11/13/18|  Researching java object converted to json |5| |
 | 11/14/18|  Researching java object converted to json |7| |
 | 11/15/18|  User Guide started, formatted output on consumption, getting contact information|7| |
+| 11/18/18|  Added css to user guide, added unit tests|4| |
+| 11/19/18|  Added more return data to the database, added more detail and styling to user guide, finishing up all documentation|5| |
 

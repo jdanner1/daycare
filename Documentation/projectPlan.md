@@ -9,7 +9,7 @@
 - [x] Write project plan
 - [x] Complete database design
 - [x] Create the database
-- [ ] Weekly journal entry
+- [x] Weekly journal entry
 - [x] Set up logging
 - [x] Create db on AWS
 - [x] Deploy to AWS 

@@ -1,9 +1,20 @@
 # Progress Log
+Kortney 
+* Hibernate relationships/dao/daotests
+* Rest service created / aws
+* Populated Database
+* Researched different resources for output (JSON/Plaintext)
+* Coded output in plain text and converted java object to json
+* Populated all documentation for team project
 
-### week 10
-Kortney - Rest service created / aws
-### Week 11
-Kortney and Rob - output plain text / convert java object to json
-### Week 12
+Robert
+* CSS/styled User guide
+* Researched different resources for output (JSON/Plaintext)
+* Coded output in plain text and converted java object to json
 
-### Week 13
+John
+* Created consumer
+* Implemented and styled consumer/user interface
+* Formatted Output for user
+* Unit tests
+* Problem Statement
