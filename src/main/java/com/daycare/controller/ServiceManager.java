@@ -98,6 +98,7 @@ public class ServiceManager implements PropertiesLoader {
         try  {
             ObjectMapper mapper = new ObjectMapper();
             students = mapper.readValue(serviceResponse, new TypeReference<List<Results>>(){});
+            logger.info("Student List: " + serviceResponse);
         } catch (Exception exception)  {
             logger.error("Exception for Object Creation: ", exception);
         }

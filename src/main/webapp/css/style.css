@@ -1,0 +1,17 @@
+body {
+    background-color: lightblue;
+}
+
+.container {
+    background-color: grey;
+}
+
+.table {
+    display: block;
+    margin: auto;
+    /* margin-right: auto; */
+}
+
+.label {
+    font-weight: bold;
+}

@@ -1,6 +1,8 @@
 package com.daycare.controller;
 
 import com.daycare.Results;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -24,6 +26,7 @@ import java.util.List;
         urlPatterns = {"/Home"}
 )
 public class HomeServlet extends HttpServlet {
+    private final Logger logger = LogManager.getLogger(this.getClass());
 
     /**
      * Forwards request and response objects to the JSP page.
@@ -40,9 +43,14 @@ public class HomeServlet extends HttpServlet {
         List<Results> results = null;
         ServiceManager serviceManager = new ServiceManager();
         String serviceResponse = serviceManager.getStudentList();
-        results = serviceManager.createStudentResults(serviceResponse);
-
         HttpSession session = request.getSession();
+
+        results = serviceManager.createStudentResults(serviceResponse);
+        if (results == null) {
+            String message1 = "There was an error retrieving the current student list";
+            session.setAttribute("message1", message1);
+        }
+
         session.setAttribute("students", results);
 
         String url = "/role1/home.jsp";

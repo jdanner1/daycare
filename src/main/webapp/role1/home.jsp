@@ -17,6 +17,7 @@
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav navbar-right">
+                <li><a href="role1/userGuide.html">User Guide</a></li>
                 <li><a href="ManageUsers">Manage Users</a></li>
                 <li><a href="index.jsp">Exit</a></li>
             </ul>
@@ -24,6 +25,12 @@
         </div>
     </div>
 </nav>
+
+<div class="row">
+    <c:if test="${not empty message1}">
+        <h3 style="color: white; text-align:center;">${message1}</h3>
+    </c:if>
+</div>
 
 <div class="row">
     <div class="col-sm-1"></div>
