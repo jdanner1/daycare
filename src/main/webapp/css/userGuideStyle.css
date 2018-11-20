@@ -1,0 +1,25 @@
+body {
+    background-image: url("../images/sky.jpg");
+    font-weight: bolder;
+}
+
+.container {
+    background-color: grey;
+}
+
+.jumbotron {
+    background-image: url("../images/sky.jpg");
+}
+
+.table {
+    display: block;
+    margin: auto;
+    /* margin-right: auto; */
+}
+
+.label {
+    font-weight: bold;
+}
+
+
+
