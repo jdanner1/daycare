@@ -12,6 +12,7 @@ body {
 .container {
     padding-top: 1%;
     background-color: lightgray;
+    padding-bottom: 4%;
 }
 
 .jumbotron {
