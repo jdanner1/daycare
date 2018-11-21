@@ -16,7 +16,7 @@ ignore our hibernate constraint. Data is now coming back. Formatted output. Crea
 Populated the database with more applicable data for users. Things are going smoothly at this point.
 
 ### Week 13
-All final updates and changes for the presentation and completetion of team project ---GO TEAM TACOS
+All final updates and changes for the presentation and completion of team project ---GO TEAM TACOS
 
 
 
