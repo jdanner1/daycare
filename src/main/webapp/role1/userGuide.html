@@ -66,7 +66,7 @@
     <div class = "row">
         <h3 class = "col-sm-3 float-left text-right">JSON</h3>
         <p class="col-sm-8 float-right">
-            JSON or JavaScript Object Notation, is a lightweight text‐based open standard designed for
+            This service currently returns information using JSON. JSON or JavaScript Object Notation, is a lightweight text‐based open standard designed for
             human‐readable data interchange. It is derived from the JavaScript scripting language for
             representing simple data structures and associative arrays, called objects.
             <br /><br />
@@ -91,12 +91,18 @@
             <br /><br />
             The application will be accessible only to employees through a standard web browser simply
             by accessing one of the URL's given through employment at Kiddie Kollege Daycare.
+            <br /><br />
+            In order to use the service in other environments you will require a unique access key that
+            you can get through through the school's IT department.  The format for the request must be
+              "http://18.224.74.193:8080/StPaulOnlineEnrollment/services/students/[your-unique-key]/"
+            will return a list of all students.  Adding the ID of an individual student after the final slash
+            will return the contact information for the students contacts.
         </p>
     </div>
 
     <hr />
-    <div class = "row">
-        <div class = "col-sm-5 float-left">
+    <div class = "row text-center">
+
             <table class="table table-striped">
                 <tr>
                     <td class = "label">Project:</td>
@@ -111,17 +117,17 @@
                     <td>John Danner - Robert Collier - Kortney Bishell</td>
                 </tr>
             </table>
-        </div>
-        <div class = "col-sm-7 float-right text-right">
-            <!--this can obviously be changed to just json if we dont get any further-->
-            <h4>Output Formats Available</h4>
-            <select>
-                <option value="choose">choose format</option>
-                <option value="JSON">JSON</option>
-                <option value="html">html (not yet implemented)</option>
-                <option value="xml">xml (not yet implemented)</option>
-            </select>
-        </div>
+
+        <!--<div class = "col-sm-7 float-right text-right">-->
+            <!--&lt;!&ndash;this can obviously be changed to just json if we dont get any further&ndash;&gt;-->
+            <!--<h4>Output Formats Available</h4>-->
+            <!--<select>-->
+                <!--<option value="choose">choose format</option>-->
+                <!--<option value="JSON">JSON</option>-->
+                <!--<option value="html">html (not yet implemented)</option>-->
+                <!--<option value="xml">xml (not yet implemented)</option>-->
+            <!--</select>-->
+        <!--</div>-->
     </div>
 </div>
 </body>

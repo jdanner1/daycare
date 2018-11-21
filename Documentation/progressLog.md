@@ -6,10 +6,14 @@ Kortney
 * Researched different resources for output (JSON/Plaintext)
 * Coded output in plain text and converted java object to json
 * Populated all documentation for team project
+* Powerpoint
 
 Robert
 * CSS/styled User guide
-* Researched different resources for output (JSON/Plaintext)
+* Researched several different resources for output (JSON/Plaintext)
+* Researched error handling resources for the rest service.
+* Authentication Implementation for the server side.
+* Tested output methods before implementing them into the project.
 * Coded output in plain text and converted java object to json
 
 John
