@@ -25,7 +25,6 @@ public class ServiceManager implements PropertiesLoader {
     private final Logger logger = LogManager.getLogger(this.getClass());
     private String restEndpointSuffix = "";
 
-
     /**
      * Gets student list.
      *

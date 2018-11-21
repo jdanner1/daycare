@@ -25,7 +25,6 @@ import java.util.List;
 
 public class HomeActionServlet extends HttpServlet {
 
-    private String FILE_PATH = "/properties.properties";
     private final Logger logger = LogManager.getLogger(this.getClass());
 
     /**
@@ -46,10 +45,16 @@ public class HomeActionServlet extends HttpServlet {
         int studentID = Integer.parseInt(studentIdString);
 
         ServiceManager serviceManager = new ServiceManager();
+        HttpSession session = request.getSession();
         String serviceResponse = serviceManager.getContacts(studentID);
+        if (serviceResponse == null) {
+            String message2 = "There was an error retrieving the contacts for the selected student";
+            session.setAttribute("message2", message2);
+        }
+
         contactResults = serviceManager.createContactResults(serviceResponse);
 
-        HttpSession session = request.getSession();
+
         session.setAttribute("contacts", contactResults);
 
         String url = "Results";
