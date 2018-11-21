@@ -6,6 +6,7 @@ Kortney
 * Researched different resources for output (JSON/Plaintext)
 * Coded output in plain text and converted java object to json
 * Populated all documentation for team project
+* Powerpoint
 
 Robert
 * CSS/styled User guide
