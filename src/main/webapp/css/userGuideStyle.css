@@ -1,14 +1,27 @@
 body {
     background-image: url("../images/sky.jpg");
     font-weight: bolder;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-position: center top;
+    margin: 0;
+    padding: 0;
 }
 
 .container {
-    background-color: grey;
+    padding-top: 1%;
+    background-color: lightgray;
 }
 
 .jumbotron {
     background-image: url("../images/sky.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-position: center top;
+    /*margin: 0;*/
+    /*padding: 2%;*/
 }
 
 .table {
