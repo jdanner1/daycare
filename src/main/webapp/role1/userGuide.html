@@ -91,6 +91,12 @@
             <br /><br />
             The application will be accessible only to employees through a standard web browser simply
             by accessing one of the URL's given through employment at Kiddie Kollege Daycare.
+            <br /><br />
+            In order to use the service in other environments you will require a unique access key that
+            you can get through through the school's IT department.  The format for the request must be
+              "http://18.224.74.193:8080/StPaulOnlineEnrollment/services/students/[your-unique-key]/"
+            will return a list of all students.  Adding the ID of an individual student after the final slash
+            will return the contact information for the students contacts.
         </p>
     </div>
 
@@ -112,16 +118,16 @@
                 </tr>
             </table>
         </div>
-        <div class = "col-sm-7 float-right text-right">
-            <!--this can obviously be changed to just json if we dont get any further-->
-            <h4>Output Formats Available</h4>
-            <select>
-                <option value="choose">choose format</option>
-                <option value="JSON">JSON</option>
-                <option value="html">html (not yet implemented)</option>
-                <option value="xml">xml (not yet implemented)</option>
-            </select>
-        </div>
+        <!--<div class = "col-sm-7 float-right text-right">-->
+            <!--&lt;!&ndash;this can obviously be changed to just json if we dont get any further&ndash;&gt;-->
+            <!--<h4>Output Formats Available</h4>-->
+            <!--<select>-->
+                <!--<option value="choose">choose format</option>-->
+                <!--<option value="JSON">JSON</option>-->
+                <!--<option value="html">html (not yet implemented)</option>-->
+                <!--<option value="xml">xml (not yet implemented)</option>-->
+            <!--</select>-->
+        <!--</div>-->
     </div>
 </div>
 </body>
